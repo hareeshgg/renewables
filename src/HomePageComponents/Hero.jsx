@@ -12,10 +12,10 @@ function Hero() {
             Expand your understanding of renewable energy and its impact today
           </h1>
           <div className="flex gap-4">
-            <Link className="bg-black hover:bg-gray-800 active:bg-gray-700 font-Nunito text-white px-4 py-3 text-sm text-center rounded-lg " to='/'>
+            <Link className="bg-black hover:bg-gray-800 active:bg-gray-700 font-Nunito text-white px-4 py-3 text-sm text-center rounded-lg " to='#'>
               Visit Store
             </Link>
-            <Link className="outline-2 outline outline-black font-Nunito px-4 py-3 text-sm text-center rounded-lg " to='/'>
+            <Link className="outline-2 outline outline-black font-Nunito px-4 py-3 text-sm text-center rounded-lg " to='#'>
               Read More
             </Link>
           </div>
