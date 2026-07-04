@@ -8,7 +8,7 @@ import Page404 from './ProjectComponents/Page404.jsx';
 
 const reactRouter = createBrowserRouter([
   {
-    path: '/',
+    path: '/renewables/',
     element: <App />,
     children: [
       { index: true, element: <Home /> },

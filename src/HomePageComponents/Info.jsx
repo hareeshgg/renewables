@@ -11,7 +11,9 @@ function Info() {
   return (
     <section className="min-h-screen grid grid-cols-2 px-48 py-16 gap-8">
 
-      <div className="bg-[url('assets/images/rec_3.jpg')] bg-center bg-cover"></div>
+      <div style={{
+        backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/rec_3.jpg)`,
+      }} className="bg-center bg-cover"></div>
 
       <div className="w-2/3 flex flex-col bg-black gap-[0.1rem]">
         {/* //* Add content for the cards  */}

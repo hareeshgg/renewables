@@ -9,7 +9,7 @@ const energyTypes = [
   { id: 3, name: 'Hydro' },
 ]
 
-const EnergyDropDown = ({setEnergyType}) => {
+const EnergyDropDown = ({ setEnergyType }) => {
   const [selectedType, setSelectedType] = useState(energyTypes[0])
   const [isSelecting, setIsSelecting] = useState(false);
 
@@ -46,7 +46,7 @@ const InputFields = ({
   setEnergyType,
   setElectricityCost,
   setAnnualUsage,
-  calc}
+  calc }
 ) => {
 
   return (
@@ -84,11 +84,11 @@ function ROICalculator() {
   const [paybackPeriod, setPaybackPeriod] = useState(null);
 
   const calculateValues = () => {
-    if(systemCost === null || energyType === null || electricityCost === null || annualUsage === null) {
+    if (systemCost === null || energyType === null || electricityCost === null || annualUsage === null) {
       console.log('Values are null');
       return;
     }
-    if(systemCost < 0 || electricityCost < 0 || annualUsage < 0) {
+    if (systemCost < 0 || electricityCost < 0 || annualUsage < 0) {
       console.log("WTF have you done");
       return;
     }
@@ -100,7 +100,7 @@ function ROICalculator() {
       case 2:
         savingsPercentage = 60;
         break;
-      case 2:
+      case 3:
         savingsPercentage = 40;
         break;
       default:
@@ -113,7 +113,9 @@ function ROICalculator() {
   }
 
   return (
-    <section className="relative py-16 px-32 before:content[''] before:top-0 before:left-0 before:w-full before:h-full before:absolute before:bg-center before:blur-[1px] before:bg-cover before:bg-[url('assets/images/abstract_bg_2.jpg')]">
+    <section style={{
+      backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/abstract_bg_2.jpg)`,
+    }} className="relative py-16 px-32 before:content[''] before:top-0 before:left-0 before:w-full before:h-full before:absolute before:bg-center before:blur-[1px] before:bg-cover">
       <div className="relative bg-gray-300/40 backdrop-blur-[4px] border-2 p-8 border-gray-50/70 w-full shadow-xl rounded-2xl grid justify-center items-center gap-x-4 gap-y-8">
 
         <div className="flex justify-around items-center">
