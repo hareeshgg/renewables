@@ -1,5 +1,3 @@
-import React from "react";
-
 const teamMembers = [
   {
     name: "Dhiraj Woli",
@@ -76,11 +74,11 @@ const TeamCard = ({ member }) => (
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-blue-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      
+
       <div className="text-center mt-4 space-y-2">
         <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
         <p className="text-sm text-gray-600 font-medium">{member.role}</p>
-        
+
         <div className="flex justify-center space-x-4 pt-2">
           <a href={member.social.twitter} className="transform transition-transform hover:scale-125 hover:text-blue-500">
             <i className="ri-twitter-x-line text-xl"></i>
@@ -115,14 +113,14 @@ function AboutUs() {
             />
           </div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-          We are a team of students passionate about web development, collaborating to build meaningful and user-friendly projects. Through this website, we aim to apply our learning, enhance our skills, and create something valuable for our college community.
+            We are a team of students passionate about web development, collaborating to build meaningful and user-friendly projects. Through this website, we aim to apply our learning, enhance our skills, and create something valuable for our college community.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <TeamCard 
-              key={index} 
+            <TeamCard
+              key={index}
               member={member}
             />
           ))}

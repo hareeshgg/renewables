@@ -1,4 +1,3 @@
-import React from "react";
 import { FaCalendar } from "react-icons/fa6";
 
 const events = [
@@ -31,11 +30,11 @@ const EventCard = ({ event }) => {
       <div className="flex flex-col gap-2">
         <h3 className="text-xl font-semibold">{event.title}</h3>
         <div className="flex items-center text-gray-600">
-            <FaCalendar />
+          <FaCalendar />
           <span>{event.date}</span>
         </div>
         <p className="text-gray-700">{event.description}</p>
-        <button className="!mt-2 w-full" variant="outline" onClick={() => window.location.href = event.link}>
+        <button className="!mt-2 w-full" onClick={() => window.location.href = event.link}>
           Register Now
         </button>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { IoCloseCircle, IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router";

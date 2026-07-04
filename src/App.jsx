@@ -9,7 +9,7 @@ import AboutUs from "./QuizComponent/About/AboutUs.jsx";
 import Quiz from "./QuizComponent/Quiz/Quiz.jsx";
 import UpcomingEvents from "./Upcoming/Upcoming.jsx";
 import CaseStudies from "./Casestudy/Casestudy.jsx";
-import Blog from "./blog/Blog.jsx";
+import Blog from "./Blog/Blog.jsx";
 import Projects from "./DIYProject/Projects.jsx";
 import ReactGA from 'react-ga4'
 

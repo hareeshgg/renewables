@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const quizData = [
   {
@@ -234,10 +234,9 @@ const Quiz = () => {
             onClick={handleNext}
             disabled={!isAnswered}
             className={`w-full py-3 rounded-lg transition-colors
-              ${
-                isAnswered
-                  ? "bg-blue-500 hover:bg-blue-600 text-white"
-                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
+              ${isAnswered
+                ? "bg-blue-500 hover:bg-blue-600 text-white"
+                : "bg-gray-300 text-gray-500 cursor-not-allowed"
               }`}
           >
             {currentIndex === quizData.length - 1
