@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "./Hero";
 import CTA from "./CTA";
 import Info from "./Info";

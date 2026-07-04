@@ -1,8 +1,4 @@
-import React from "react";
-import { FcGlobe } from "react-icons/fc";
-import { FaLeaf } from "react-icons/fa6";
 import { Link } from "react-router";
-import { MdArrowOutward } from "react-icons/md";
 
 function CTA() {
   return (
