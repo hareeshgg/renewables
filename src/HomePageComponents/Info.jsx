@@ -9,67 +9,81 @@ function Info() {
     setCurrentOpenTab(value);
   }
   return (
-    <section className="min-h-screen grid grid-cols-2 px-48 py-16 gap-8">
+    <section className="bg-gray-200 sm:min-h-screen sm:grid sm:grid-cols-2 px-4 md:px-24 xl:px-48 py-8 md:py-16 gap-8">
+      <div className="bg-[url('./assets/images/rec_3.jpg')] sm:block hidden bg-center bg-cover"></div>
 
-      <div style={{
-        backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/rec_3.jpg)`,
-      }} className="bg-center bg-cover"></div>
-
-      <div className="w-2/3 flex flex-col bg-black gap-[0.1rem]">
+      <div className="lg:w-2/3 flex flex-col bg-black gap-[0.1rem]">
         {/* //* Add content for the cards  */}
-        <div className={`bg-white py-4 transition-all ${currentOpenTab == 0 ? "flex-auto" : "flex-initial"}`}>
-          <div onClick={() => changeCurrentTab(0)} className="flex justify-between items-center">
-            <h1 className="font-MontserratBold text-2xl">Powering Tomorrow with Clean Energy</h1>
-            {
-              (currentOpenTab == 0)
-                ? <MdCloseFullscreen />
-                : <RxHamburgerMenu />
-            }
+        <div
+          className={`bg-gray-200 py-4 transition-all ${currentOpenTab == 0 ? "flex-auto" : "flex-initial"
+            }`}
+        >
+          <div
+            onClick={() => changeCurrentTab(0)}
+            className="flex justify-between items-center"
+          >
+            <h1 className="font-MontserratBold text-2xl">
+              The Importance of Renewable Energy
+            </h1>
+            {currentOpenTab == 0 ? <MdCloseFullscreen /> : <RxHamburgerMenu />}
           </div>
-          {
-            (currentOpenTab == 0)
-              ? <p className="pt-4">We help businesses and communities transition to reliable, sustainable energy solutions. From large-scale solar installations to wind energy consulting, our team designs systems that reduce emissions, lower operating costs, and create long-term value.
-
-                Every project is tailored to your goals, ensuring maximum efficiency while minimizing environmental impact. Together, we're building a cleaner future powered by renewable energy.</p>
-              : <span />
-          }
+          {currentOpenTab == 0 ? (
+            <p className="pt-4">
+              Renewable energy is essential for combating climate change and building a sustainable future. By harnessing natural resources like solar, wind, and hydropower, we can reduce our reliance on fossil fuels and lower greenhouse gas emissions. Transitioning to clean energy not only helps protect the environment but also promotes energy security, creates green jobs, and boosts economic growth. Embracing renewable energy today ensures a cleaner, healthier planet for future generations. Let's power our world sustainably!
+            </p>
+          ) : (
+            <span />
+          )}
         </div>
 
-        <div className={`bg-white py-4 transition-all ${currentOpenTab == 1 ? "flex-auto" : "flex-initial"}`}>
-          <div onClick={() => changeCurrentTab(1)} className="flex justify-between items-center">
-            <h1 className="font-MontserratBold text-2xl">Built for Performance</h1>
-            {
-              (currentOpenTab == 1)
-                ? <MdCloseFullscreen />
-                : <RxHamburgerMenu />
-            }
+        <div
+          className={`bg-gray-200 py-4 transition-all ${currentOpenTab == 1 ? "flex-auto" : "flex-initial"
+            }`}
+        >
+          <div
+            onClick={() => changeCurrentTab(1)}
+            className="flex justify-between items-center"
+          >
+            <h1 className="font-MontserratBold text-2xl">
+              Clean Energy: The Path to a Greener World
+
+            </h1>
+            {currentOpenTab == 1 ? <MdCloseFullscreen /> : <RxHamburgerMenu />}
           </div>
-          {
-            (currentOpenTab == 1)
-              ? <p className="pt-4">Our approach combines innovative technology, industry expertise, and a commitment to sustainability. We work closely with our clients from planning to implementation, delivering renewable energy solutions that are efficient, scalable, and built to last.</p>
-              : <span />
-          }
+          {currentOpenTab == 1 ? (
+            <p className="pt-4">
+              Renewable energy is the key to a sustainable and environmentally friendly future. By utilizing solar, wind, and geothermal power, we can dramatically reduce our carbon footprint. This shift not only combats climate change but also enhances energy security, lowers pollution, and provides long-term economic benefits. As technology advances, renewable energy becomes more accessible and efficient, making it easier for individuals and businesses to adopt. Together, we can build a cleaner, healthier planet for future generations.
+            </p>
+          ) : (
+            <span />
+          )}
         </div>
 
-        <div className={`bg-white py-4 transition-all ${currentOpenTab == 2 ? "flex-auto" : "flex-initial"}`}>
-          <div onClick={() => changeCurrentTab(2)} className="flex justify-between items-center">
-            <h1 className="font-MontserratBold text-2xl">Driving Real Change</h1>
-            {
-              (currentOpenTab == 2)
-                ? <MdCloseFullscreen />
-                : <RxHamburgerMenu />
-            }
-          </div>
-          {
-            (currentOpenTab == 2)
-              ? <p className="pt-4">Whether you're planning your first renewable energy project or expanding an existing infrastructure, our team is ready to help. Get in touch to discover how clean energy can transform your business and create lasting environmental impact.</p>
-              : <span />
-          }
-        </div>
+        <div
+          className={`bg-gray-200 py-4 transition-all ${currentOpenTab == 2 ? "flex-auto" : "flex-initial"
+            }`}
+        >
+          <div
+            onClick={() => changeCurrentTab(2)}
+            className="flex justify-between items-center"
+          >
+            <h1 className="font-MontserratBold text-2xl">
+              Why We Need to Embrace Renewable Energy
 
+            </h1>
+            {currentOpenTab == 2 ? <MdCloseFullscreen /> : <RxHamburgerMenu />}
+          </div>
+          {currentOpenTab == 2 ? (
+            <p className="pt-4">
+              Shifting to renewable energy sources like solar, wind, and hydropower is crucial to creating a sustainable world. These clean energy options help reduce greenhouse gas emissions, mitigate climate change, and ensure a more secure and reliable energy future. By embracing renewable technologies, we can reduce pollution, improve public health, and stimulate green job growth. Renewable energy provides endless opportunities for a cleaner, more sustainable future. Let’s make the shift to renewable energy today for a better tomorrow.
+            </p>
+          ) : (
+            <span />
+          )}
+        </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Info;

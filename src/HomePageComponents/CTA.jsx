@@ -1,14 +1,23 @@
 import { Link } from "react-router";
+import ReactGA from 'react-ga4';
 
 function CTA() {
+  const handleClick = () => {
+    ReactGA.event({
+      category: 'Social Links',
+      action: 'Click',
+      label: platform,
+    });
+  }
+
   return (
-    <section className=" bg-gray-200 p-16 flex flex-col items-center justify-items-center gap-8">
-      <h1 className="w-1/2 text-center font-MontserratBold text-4xl text-gray-700 pb-8">
+    <section className=" bg-gray-200 py-8 px-4 sm:px-16 sm:py-16 flex flex-col items-center justify-items-center gap-4 sm:gap-8">
+      <h1 className="sm:w-2/3 xl:w-1/2 text-center font-MontserratBold text-3xl sm:text-4xl pb-8">
         Imagine. Act. Transform. Join Us in Building a Greener Tomorrow!
       </h1>
       <div>
-        <Link className="bg-green-500 hover:bg-green-400 active:bg-green-300 font-Nunito px-6 py-4 rounded-full transition-all">
-          Get Involved Today
+        <Link onClick={handleClick} to={'https://forms.gle/65FUp9HteRacTRPa9'} className="bg-green-500 hover:bg-green-400 active:bg-green-300 font-Nunito px-4 py-3 sm:px-6 sm:py-4 rounded-full transition-all">
+          Give us your feedback
         </Link>
       </div>
 
