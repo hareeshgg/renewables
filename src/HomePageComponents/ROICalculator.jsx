@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { IoChevronDown } from "react-icons/io5";
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
