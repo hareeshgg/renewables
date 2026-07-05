@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Header from "./ProjectComponents/Header";
 import Chatbot from "./ProjectComponents/Chatbot";
 import { HashRouter, Routes, Route, Outlet } from "react-router";
@@ -11,8 +10,6 @@ import UpcomingEvents from "./Upcoming/Upcoming.jsx";
 import CaseStudies from "./Casestudy/Casestudy.jsx";
 import Blog from "./Blog/Blog.jsx";
 import Projects from "./DIYProject/Projects.jsx";
-import ReactGA from 'react-ga4'
-
 
 const Layout = () => {
   return (
@@ -28,12 +25,6 @@ const Layout = () => {
 };
 
 function App() {
-
-  useEffect(() => {
-    ReactGA.initialize(import.meta.env.VITE_GA_TRACKING_ID);
-    ReactGA.send({ hitType: "pageview", page: "/", title: "Landing Page" });
-  }, [])
-
   return (
     <HashRouter>
       <Routes>

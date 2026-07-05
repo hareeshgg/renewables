@@ -1,14 +1,6 @@
 import { Link } from "react-router";
-import ReactGA from 'react-ga4';
 
 function CTA() {
-  const handleClick = () => {
-    ReactGA.event({
-      category: 'Social Links',
-      action: 'Click',
-      label: platform,
-    });
-  }
 
   return (
     <section className=" bg-gray-200 py-8 px-4 sm:px-16 sm:py-16 flex flex-col items-center justify-items-center gap-4 sm:gap-8">
