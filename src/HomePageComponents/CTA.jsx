@@ -8,7 +8,7 @@ function CTA() {
         Imagine. Act. Transform. Join Us in Building a Greener Tomorrow!
       </h1>
       <div>
-        <Link onClick={handleClick} to={'https://forms.gle/65FUp9HteRacTRPa9'} className="bg-green-500 hover:bg-green-400 active:bg-green-300 font-Nunito px-4 py-3 sm:px-6 sm:py-4 rounded-full transition-all">
+        <Link to={'https://forms.gle/65FUp9HteRacTRPa9'} className="bg-green-500 hover:bg-green-400 active:bg-green-300 font-Nunito px-4 py-3 sm:px-6 sm:py-4 rounded-full transition-all">
           Give us your feedback
         </Link>
       </div>
